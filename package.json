@@ -4,10 +4,13 @@
   "description": "quickly build a react component with typescript",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "es",
+    "example"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/tsc -p ."
+    "clean": "rm -rf es lib",
+    "build": "yarn clean && ./node_modules/.bin/webpack --config ./webpack.prod.config.js"
   },
   "keywords": [
     "react",
@@ -25,7 +28,11 @@
     "cz-conventional-changelog": "^2.1.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "typescript": "^3.3.4000"
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-merge": "^4.2.1"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
