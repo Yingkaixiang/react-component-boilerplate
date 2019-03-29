@@ -6,8 +6,9 @@ const baseConfig = require("./webpack.config");
 const production = {
   mode: "production",
   output: {
-    filename: "index.js",
-    path: path.resolve(__dirname, "./lib")
+    filename: "[name].js",
+    path: path.resolve(__dirname, "./lib"),
+    libraryTarget: "umd"
   }
 };
 
