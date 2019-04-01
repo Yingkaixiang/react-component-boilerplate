@@ -4,6 +4,8 @@
 
 如果你也想自己搭建一个脚手架，你可以参考我写的这篇文章 [手摸手教你发布一个 react 组件](https://yingkaixiang.gitbook.io/frontend-wiki/web/javascript/react/how-to-create-a-react-component)。
 
+> 本项目默认使用 `yarn` 作为包管理器，以及使用 `npx` 执行命令行。你可以自行修改 `package.json` 来修改这些脚本。
+
 ## 目录说明
 
 #### src

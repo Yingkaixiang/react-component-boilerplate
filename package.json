@@ -8,9 +8,9 @@
     "example"
   ],
   "scripts": {
+    "clean": "npx shx rm -rf lib",
     "start": "npx webpack-dev-server --config ./webpack.dev.config.js --open",
-    "build": "yarn clean && npx webpack --config ./webpack.prod.config.js",
-    "clean": "rm -rf lib"
+    "build": "yarn clean && npx webpack --config ./webpack.prod.config.js"
   },
   "keywords": [
     "react",
@@ -32,6 +32,7 @@
     "less-loader": "^4.1.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "shx": "^0.3.2",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
