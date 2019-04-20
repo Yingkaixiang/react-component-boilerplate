@@ -4,6 +4,7 @@ module.exports = {
     rules: [
       {
         test: /\.(css|less)$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: "style-loader"
@@ -11,15 +12,24 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              sourceMap: true,
-              modules: true
+              modules: true,
             }
           },
           {
             loader: "less-loader"
           }
         ],
-        exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 5120,
+            }
+          },
+        ]
       }
     ]
   },

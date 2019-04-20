@@ -9,6 +9,7 @@ const Hello: React.FC<{ text: string }> = ({ text }) => {
     <h2 className={styles.header}>
       {text}
       <Item text={text} />
+      <div className={styles.test}>4444</div>
     </h2>
   );
 };
