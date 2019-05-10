@@ -1,10 +1,10 @@
 import React from "react";
 
-interface ItemProps {
+interface IItemProps {
   text: string;
 }
 
-const Item: React.FC<ItemProps> = ({ text }) => {
+const Item: React.FC<IItemProps> = ({ text }) => {
   return <span style={{ color: "red" }}>{text}</span>;
 };
 

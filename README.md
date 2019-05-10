@@ -1,8 +1,31 @@
 # react-component-boilerplate
 
-用于快速创建 react 组件的脚手架。
+一个快速创建 react 组件的脚手架。
 
-> 本项目默认使用 `yarn` 作为包管理器，以及使用 `npx` 执行命令行。你可以自行修改 `package.json` 来修改这些脚本。
+## 如何使用
+
+### 第一步：配置 VSCode
+
+请先安装下列插件：
+
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+
+### 第二步：本地开发
+
+```
+// 安装依赖
+yarn
+
+// 本地调试
+yarn start
+
+// 编译打包
+yarn build
+```
+
+### 第三部：提交代码
+
+创建 commit 时不再使用 `git commit -m "你的内容"` 命令而是改用 `yarn commit`。它可以帮助你规范你的 git commit 格式。
 
 ## 为什么不直接使用开源的脚手架
 
@@ -24,16 +47,6 @@
 #### example
 
 用于进行本地调试以及组件功能演示。
-
-## 如何使用
-
-```
-// 本地调试
-yarn start
-
-// 编译打包
-yarn build
-```
 
 ## 结语
 
